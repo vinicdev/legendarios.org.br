@@ -1,0 +1,78 @@
+@import "./reset";
+@import "./variables";
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: $black;
+}
+
+.header {
+    @include d-flex(column, center, center);
+    background-image: url('/assets/img/track-outdoor-pontencial.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50%;
+    z-index: 1;
+
+    img {
+        margin-bottom: 35px;
+    }
+
+    h1,
+    span {
+        color: $white;
+    }
+
+    h1 {
+        width: 400px;
+        text-align: center;
+        font-size: clamp(.875rem, 4vw, 1rem);
+        font-weight: 400;
+        margin-bottom: 10px;
+
+        u {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    span {
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #21252B 6%, rgba(217, 217, 217, 0.00) 100%);
+        z-index: -1;
+    }
+}
+
+.links {
+    @include d-flex(column, center, center);
+
+    &__list {
+        list-style: none;
+        @include d-flex(column, center, center);
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__item {
+        h2 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}

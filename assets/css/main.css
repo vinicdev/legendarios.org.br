@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.bnt {
+  width: 331px;
+  height: 55px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-bg1 {
+  background-color: #f2f2f2;
+}
+
+.btn-bg2 {
+  background-color: #FF4307;
+}
+
+.btn-color1 {
+  color: #000000;
+}
+
+.btn-color2 {
+  color: #ffffff;
+}
+
+.hover1, .hover2 {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 0.3s;
+}
+
+.hover1:hover {
+  background-color: #cecece;
+}
+
+.hover2:hover {
+  background-color: hsla(15, 100%, 51%, 0.8);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #21252B;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/img/track-outdoor-pontencial.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 50%;
+  z-index: 1;
+}
+.header img {
+  margin-bottom: 35px;
+}
+.header h1,
+.header span {
+  color: #ffffff;
+}
+.header h1 {
+  width: 400px;
+  text-align: center;
+  font-size: clamp(0.875rem, 4vw, 1rem);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.header h1 u {
+  color: #FF4307;
+  text-decoration: none;
+}
+.header span {
+  font-weight: 100;
+  font-size: 14px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #21252B 6%, rgba(217, 217, 217, 0) 100%);
+  z-index: -1;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.links__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.links__list a {
+  text-decoration: none;
+}
+.links__item h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
