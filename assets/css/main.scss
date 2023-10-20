@@ -54,6 +54,17 @@ body {
         background: linear-gradient(0deg, #21252B 6%, rgba(217, 217, 217, 0.00) 100%);
         z-index: -1;
     }
+
+    @media (max-width: 400px) {
+        img {
+            width: 250px;
+            height: 196px;
+        }
+    
+        h1 {
+            width: 95%
+        }
+    }
 }
 
 .links {
@@ -67,6 +78,14 @@ body {
 
         a {
             text-decoration: none;
+        }
+
+        @media(max-width: 400px) {
+            width: 95%;
+
+            a {
+                width: 100%;
+            }
         }
     }
 
