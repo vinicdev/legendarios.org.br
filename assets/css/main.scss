@@ -63,6 +63,7 @@ body {
         list-style: none;
         @include d-flex(column, center, center);
         gap: 20px;
+        margin-bottom: 30px;
 
         a {
             text-decoration: none;
@@ -73,6 +74,45 @@ body {
         h2 {
             font-size: 1rem;
             font-weight: 400;
+        }
+    }
+
+    &__socialMedia {
+        span {
+            font-family: inherit;
+            font-size: .875rem;
+            font-weight: 100;
+            color: $white-02;
+        }
+
+        ul {
+            @include d-flex(row, center, center);
+            gap: 20px;
+            margin-top: 15px;
+            list-style: none;
+        }
+    }
+}
+
+.footer {
+    @include d-flex(row, center, center);
+
+    margin-top: 80px;
+
+    p {
+        font-size: .875rem;
+        color: $white;
+        font-weight: 300;
+
+        a {
+            color: $orange;
+            text-decoration: underline;
+            font-weight: 400;
+            transition: .4s;
+
+            &:hover {
+                opacity: .5;
+            }
         }
     }
 }
