@@ -1,31 +1,31 @@
 # Legendarios.org.br
 
-Prejeto feito para facilitar o acesso a links, para ser utilizado na biografia do instagram.
+Project made to facilitate access to links, to be used in the Instagram biography.
 
 ## Screenshots
 
 ![Banner LGND](https://i.imgur.com/g1Jw8Q3.png)
 
 
-## Rodando localmente
+## Running locally
 
-Clone o projeto
+Clone the project
 
 ```bash
   git clone https://github.com/vinicdev/legendarios.org.br
 ```
 
-Entre no diretório do projeto
+Enter the project directory
 
 ```bash
   cd legendarios.org.br
 ```
 
-Aconselho o uso do Live Server para facilitar o uso localmente
+I advise using Live Server for ease of use locally
 
 
 
-## Autores
+## Author
 
 - [@vinicdev](https://www.github.com/vinicdev)
 
